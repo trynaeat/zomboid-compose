@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  zomboid:
+    build:
+      context: ./
+    volumes:
+      - ./Zomboid:/home/steam/Zomboid
+    ports:
+      - "8766:8766"
+      - "16261:16261"
+      - "16262-16272:16262-16272"
+    mem_limit: 12G
+    mem_reservation: 10G
