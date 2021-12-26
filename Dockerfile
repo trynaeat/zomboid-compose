@@ -32,7 +32,7 @@ RUN mkdir /home/steam/steamcmd &&\
 	curl http://media.steampowered.com/installer/steamcmd_linux.tar.gz | tar -vxz
 
 RUN /home/steam/steamcmd/steamcmd.sh +quit
-RUN /home/steam/steamcmd/steamcmd.sh +force_install_dir /home/pzserver +login anonymous +app_update 380870 -beta b41multiplayer +quit
+RUN /home/steam/steamcmd/steamcmd.sh +force_install_dir /home/pzserver +login anonymous +app_update 380870 +quit
 
 USER ${USER}
 
