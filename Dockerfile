@@ -44,5 +44,5 @@ EXPOSE ${PLAYERPORTS}
 WORKDIR /home
 
 COPY start.sh /home/start.sh
-ENTRYPOINT ["tail", "-f", "/dev/null"]
-# CMD ["bash", "start.sh"]
+# ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD ["bash", "start.sh"]
