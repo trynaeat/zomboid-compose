@@ -12,3 +12,10 @@ services:
       - "16262-16272:16262-16272"
     mem_limit: 8G
     mem_reservation: 6G
+  backup:
+    build:
+      context: ./
+      dockerfile: backup.dockerfile
+    volumes:
+      - ./Zomboid:/home/Zomboid
+      - ./backups:/home/backups

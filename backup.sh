@@ -12,7 +12,7 @@ backup_files="./Zomboid"
 dest="./backups"
 
 # Create archive filename.
-date=$(date +"%Y-%m-%d")
+date=$(date +"%Y-%m-%dT%H:%M:%S")
 archive_file="Zomboid-$date.tgz"
 
 # Print start status message.
