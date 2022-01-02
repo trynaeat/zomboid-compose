@@ -1,1 +1,1 @@
-*/15 * * * * /home/backup.sh
+55 11,23 * * * /home/backup.sh > /proc/1/fd/1 2>/proc/1/fd/2

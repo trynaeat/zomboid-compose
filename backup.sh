@@ -6,10 +6,10 @@
 ####################################
 
 # What to backup. 
-backup_files="./Zomboid"
+backup_files="/home/Zomboid"
 
 # Where to backup to.
-dest="./backups"
+dest="/home/backups"
 
 # Create archive filename.
 date=$(date +"%Y-%m-%dT%H:%M:%S")

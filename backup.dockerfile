@@ -6,6 +6,7 @@ COPY backup.sh /home/backup.sh
 COPY backup-cron /etc/cron.d/backup-cron
 
 RUN chmod 0644 /etc/cron.d/backup-cron
+RUN chmod a+x /home/backup.sh
 
 RUN crontab /etc/cron.d/backup-cron
 
